@@ -20,9 +20,14 @@ describe("Thermostat", function(){
       expect(thermostat.temperature).toEqual(21);
     });
 
-    it("", function(){
+    it("can decrease", function(){
       thermostat.changeTemperature(-1);
       expect(thermostat.temperature).toEqual(19);
+    });
+
+    it("cannot be decreased bellow 10", function(){
+      expect(thermostat.changeTemperature(-11)).toBe("Cannot decrease bellow 10");
+      expect(thermostat.temperature).toEqual(10);
     });
 
 	});
