@@ -14,10 +14,17 @@ describe("Thermostat", function(){
 	});
 
 	describe("changing temperature", function(){
+
 		it("can increase", function(){
-      thermostat.increaseTemperature(1);
+      thermostat.changeTemperature(1);
       expect(thermostat.temperature).toEqual(21);
     });
+
+    it("", function(){
+      thermostat.changeTemperature(-1);
+      expect(thermostat.temperature).toEqual(19);
+    });
+
 	});
 
 });
