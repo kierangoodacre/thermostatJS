@@ -14,3 +14,7 @@ Thermostat.prototype.changeTemperature = function(changeTempBy){
 		return this.temperature
 	}
 };
+
+Thermostat.prototype.resetTemperature = function(){
+	this.temperature = 20;
+};
