@@ -78,13 +78,24 @@ describe("Thermostat", function(){
 
   });
 
-  describe("Thermostat energy", function(){
+  describe("Thermostat energy level", function(){
 
-    it("should be low when bellow 18", function(){
+    it("should be low when temp bellow 18", function(){
       thermostat.changeTemperature(-10);
-      thermostat.energyMode();
       expect(thermostat.energy).toBe("low");
     });
+
+    it("should be high when temp above 25",function(){
+      thermostat.powerSavingSwitch("Off");
+      thermostat.changeTemperature(7);
+      expect(thermostat.energy).toBe("high");
+    });
+
+    it("should medium when between 18 and 25", function(){
+      thermostat.changeTemperature(-1);
+      expect(thermostat.energy).toBe("medium");
+    });
+
 
   });
 
