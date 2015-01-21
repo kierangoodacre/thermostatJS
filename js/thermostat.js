@@ -11,6 +11,10 @@ Thermostat.prototype.changeTemperature = function(changeTempBy){
 		this.temperature = 25
 		return "Cannot increase above 25"
 	}
+	else if (this.powerSavingMode === false && this.temperature > 32){
+		this.temperature = 32
+		return "Cannot increase above 32"
+	}
 	else if (this.temperature < 10 ) {
 		this.temperature = 10
 		return "Cannot decrease bellow 10"

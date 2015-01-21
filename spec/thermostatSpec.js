@@ -62,6 +62,20 @@ describe("Thermostat", function(){
       expect(thermostat.temperature).toEqual(26);
     });
 
+    it("should be on by default", function(){
+      expect(thermostat.powerSavingMode).toBe(true);
+    });
+
+  });
+
+  describe("When power saving is off", function(){
+
+    it("should have a max temp of 32",function(){
+      thermostat.powerSavingSwitch("Off");
+      expect(thermostat.changeTemperature(17)).toBe("Cannot increase above 32");
+      expect(thermostat.temperature).toEqual(32);
+    });
+
   });
 
 });
