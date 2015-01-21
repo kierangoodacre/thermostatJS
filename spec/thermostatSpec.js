@@ -38,4 +38,30 @@ describe("Thermostat", function(){
 
 	});
 
+  describe("When power saving", function(){
+
+    it("should be able to be switched on", function(){
+      thermostat.powerSavingSwitch("On");
+      expect(thermostat.powerSavingMode).toBe(true);
+    });
+
+    it("should be able to be switched Off", function(){
+      thermostat.powerSavingSwitch("Off");
+      expect(thermostat.powerSavingMode).toBe(false);
+    });
+
+    it("should have a max temp of 25", function(){
+      thermostat.powerSavingSwitch("On");
+      expect(thermostat.changeTemperature(6)).toBe("Cannot increase above 25");
+      expect(thermostat.temperature).toEqual(25);
+    });
+
+    it("should not have a max temp when off", function(){
+      thermostat.powerSavingSwitch("Off");
+      thermostat.changeTemperature(6);
+      expect(thermostat.temperature).toEqual(26);
+    });
+
+  });
+
 });
