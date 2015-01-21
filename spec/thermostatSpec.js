@@ -78,4 +78,14 @@ describe("Thermostat", function(){
 
   });
 
+  describe("Thermostat energy", function(){
+
+    it("should be low when bellow 18", function(){
+      thermostat.changeTemperature(-10);
+      thermostat.energyMode();
+      expect(thermostat.energy).toBe("low");
+    });
+
+  });
+
 });
