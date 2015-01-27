@@ -14,6 +14,17 @@ var updateTemperature = function(){
 			$('h1').css('color', 'red')
 		}
 	});
+	$('h2').each(function(){
+		if (thermostat.energy === "low"){
+			$('h2').css('background-color', 'green')
+		}
+		else if (thermostat.energy === "medium"){
+			$('h2').css('background-color', 'yellow')
+		}
+		else {
+			$('h2').css('background-color', 'red')
+		}
+	});
 };
 
 

@@ -3,7 +3,6 @@
 <html>
 
 	<head>
-		<title>Thermostat</title>
 		<meta charset='utf-8'>
 		<link rel="stylesheet" href="css/thermo-style.css">
 	</head>
@@ -12,7 +11,10 @@
 
     <main class="grid">
 
-      <section class= 'col-7-12'>
+      <section class= 'col-8-12'>
+        <img id= "degrees-image" src="public/degrees.svg">
+      </section>
+      <section class= 'col-1-7'>
         <h1 class="medium-usage">
             <span id="temperature">??</span>
         </h1>
@@ -21,16 +23,13 @@
           <button class='decrease-temp'>-</button>
           <button class='reset'>reset</button>
         </p>
-        <h2>power saving mode</h2>
+        <h2><span id= "PSM">power saving mode</span></h2>
         <p>
           <button class='PSM-on'>ON</button>
         </p>
         <p>
           <button class='PSM-off'>OFF</button>
         </p>
-      </section>
-      <section class= 'col-5-12'>
-        <img id= "degrees-image" src="public/degrees.svg">
       </section>
     </main>
 

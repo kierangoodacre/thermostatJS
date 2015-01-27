@@ -1,75 +1,61 @@
 @import url('normalize.css');
+@import url('grid.css');
 
-* {
-	margin: 0;
-	padding: 0;
-	font-family: Helvetica;
-	font-size: 1.2em;
+*{
+	font-family: helvetica;
+}
+#temperature {
+	font-size: 7em;
+	position: relative;
+	top: 0.12em;
+	right: 0.05em;
+}
+#degrees-image{
+	z-index: 1;
+	position: relative;
+	right: 2.1%;
 }
 #button-container{
-	position: relative;
+	clear: both;
 }
-.increase-temp {
+h2 {
+ background-color: red;
+}
+#PSM{
+	background: white;
+}
+#button-container{
+	font-size: 3em;
+	position: relative;
+	right: 0.3em ;
+}
+.increase-temp{
 	background: none;
 	padding: 0;
 	border: none;
 	left: 0;
 }
-.decrease-temp {
+.decrease-temp{
+	background: none;
 	padding: 0;
 	border: none;
-	background: none;
-	right: 0;
+	left: 0;
 }
-.reset {
+.reset{
+	background: none;
 	padding: 0;
 	border: none;
-	background: none;
-	top: 0;
+	left: 0;
 }
 .PSM-on{
+	background: none;
 	padding: 0;
 	border: none;
-	background: none;
+	left: 0;
 }
 .PSM-off{
+	background: none;
 	padding: 0;
 	border: none;
-	background: none;
+	left: 0;
 }
-h1 {
-	font-size: 5em;
-}
-.col-5-12{
-	background-color: red;
-	height: 100%;
-  width: 41.65%;
-  float: right;
-}
-.col-7-12{
-	width: 58.35%;
-	height: 100%;
-	text-align: right;
-}
-
-/*#degrees-image {
-	position: absolute;
-	padding-top: 0.5em;
-	-ms-transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	transform: rotate(90deg);
-}*/
-/*
-.high {
-	color: red
-}
-
-.medium {
-	color: yellow
-}
-
-.low {
-	color: green;
-}
-*/
-
