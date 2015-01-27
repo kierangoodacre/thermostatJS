@@ -1,0 +1,75 @@
+@import url('normalize.css');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+	font-size: 1.2em;
+}
+#button-container{
+	position: relative;
+}
+.increase-temp {
+	background: none;
+	padding: 0;
+	border: none;
+	left: 0;
+}
+.decrease-temp {
+	padding: 0;
+	border: none;
+	background: none;
+	right: 0;
+}
+.reset {
+	padding: 0;
+	border: none;
+	background: none;
+	top: 0;
+}
+.PSM-on{
+	padding: 0;
+	border: none;
+	background: none;
+}
+.PSM-off{
+	padding: 0;
+	border: none;
+	background: none;
+}
+h1 {
+	font-size: 5em;
+}
+.col-5-12{
+	background-color: red;
+	height: 100%;
+  width: 41.65%;
+  float: right;
+}
+.col-7-12{
+	width: 58.35%;
+	height: 100%;
+	text-align: right;
+}
+
+/*#degrees-image {
+	position: absolute;
+	padding-top: 0.5em;
+	-ms-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}*/
+/*
+.high {
+	color: red
+}
+
+.medium {
+	color: yellow
+}
+
+.low {
+	color: green;
+}
+*/
+

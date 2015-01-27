@@ -6,6 +6,8 @@ describe("Thermostat", function(){
 		thermostat = new Thermostat();
 	});
 
+//default temperature
+
 	describe("by - default", function(){
 
 		it("by default", function(){
@@ -43,6 +45,13 @@ describe("Thermostat", function(){
     it("should be able to be switched on", function(){
       thermostat.powerSavingSwitch("On");
       expect(thermostat.powerSavingMode).toBe(true);
+    });
+
+    it("should reset temp back to max temp 25", function(){
+      thermostat.powerSavingSwitch("Off");
+      thermostat.changeTemperature(8);
+      thermostat.powerSavingSwitch("On");
+      expect(thermostat.temperature).toEqual(25);
     });
 
     it("should be able to be switched Off", function(){

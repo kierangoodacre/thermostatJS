@@ -39,12 +39,11 @@ Thermostat.prototype.resetTemperature = function(){
 Thermostat.prototype.powerSavingSwitch = function(mode){
 	if (mode === "On"){
 		this.powerSavingMode = true
+		this.changeTemperature(0);
 	}
 	else if (mode === "Off"){
 		this.powerSavingMode = false
-	}
-	else {
-		return "Please specify On or Off"
+		this.changeTemperature(0);
 	}
 };
 
