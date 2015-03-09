@@ -1,17 +1,24 @@
-*Thermostat starts at 20 degrees
+# thermostatJS
 
-*You can increase the temp with the up button
+Introduction
 
-*You can decrease the temp with the down button
+We were given the task of creating a thermostat which had various features, such as power saving mode, maximum and minimum temperatures and changing of colour based on temperature.
 
-*The minimum temperature is 10 degrees
+|Languages |Frameworks|Testing  |
+|----------|----------|---------|
+|Javascript|jQuery    | Jasmine |
+|CSS       |EJS       |         |
+|HTML      |          |         |
+|          |          |         |
 
-*You can reset the temperature to 20 by hitting the reset button
+Contributors
+-----------------
 
-*If power saving mode is on, the maximum temperature is 25 degrees
+Kieran Goodacre
 
-*If power saving mode is off, the maximum temperature is 32 degrees
+Learning Outcomes
+-----------------
 
-*Power saving mode is on by default
-
-Thermostat should color the display based on energy usage - < 18 is green, < 25 is yellow, otherwise red
+- My first venture at front end design
+- Javascript & jQuery
+- Jasmine as a testing tool
