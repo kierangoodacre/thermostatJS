@@ -53,14 +53,14 @@ $(document).ready(function(){
 	});
 
 	$('.PSM-off').on('click', function() {
-    thermostat.powerSavingSwitch('Off');
-    updateTemperature();
-  });
+          thermostat.powerSavingSwitch('Off');
+          updateTemperature();
+        });
 
-  $('.PSM-on').on('click', function() {
-    thermostat.powerSavingSwitch('On');
-    updateTemperature();
-  });
+        $('.PSM-on').on('click', function() {
+          thermostat.powerSavingSwitch('On');
+          updateTemperature();
+        });
 
 });
 
